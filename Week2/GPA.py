@@ -16,7 +16,6 @@ def calculate_gpa(grades):
 
     return total_points / total_credits
 
-
 def grade_to_point(grade):
     """
     แปลงเกรดเป็นค่าคะแนน (Grade Points)
@@ -31,7 +30,6 @@ def grade_to_point(grade):
         "F": 0.0
     }
     return grade_mapping.get(grade.upper(), 0)
-
 
 # รับข้อมูลจากผู้ใช้
 grades = []

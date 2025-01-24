@@ -1,8 +1,14 @@
 print("***Convert BMI***")
 
-wieight = float(input("Enter your wieight (kg): "))
+# รับข้อมูลน้ำหนักและส่วนสูง
+weight = float(input("Enter your weight (kg): "))
 height = float(input("Enter your height (cm): "))
 
-bmi = wieight / (height ** 2)
+# แปลงความสูงจากเซนติเมตรเป็นเมตร
+height = height / 100
 
-print(f"Your BMI is {bmi: .5f}")
+# คำนวณ BMI
+bmi = weight / (height ** 2)
+
+# แสดงผลลัพธ์ BMI
+print(f"Your BMI is {bmi:.2f}")
